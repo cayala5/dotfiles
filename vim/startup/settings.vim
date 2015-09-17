@@ -16,7 +16,7 @@ if exists("+autochdir")
 endif
 set wrapscan
 set incsearch
-"set hlsearch
+set hlsearch
 set smartcase
 
 "" displaying text

@@ -69,3 +69,10 @@ nnoremap <leader>nt :NERDTreeToggle<cr>
 " Paste with shift+ins
 map <S-Insert> <MiddleMouse>
 map! <S-Insert> <MiddleMouse>
+
+" clang-format
+map <C-T> :pyf /bb/bigstorq4/scrpbuild/devtools/bin/clang-format.py<CR>
+imap <C-T> <C-o>:pyf /bb/bigstorq4/scrpbuild/devtools/bin/clang-format.py<CR>
+
+" Visual block paste (see https://danielmiessler.com/study/vim/)
+vnoremap . :norm.<CR>

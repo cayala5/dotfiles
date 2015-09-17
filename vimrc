@@ -1,9 +1,9 @@
 " .vimrc
 " vim:sw=2
 "
-" Mario Longobardi
+" Christian Ayala
 "
-" Thanks to Eric N. Vander Weele and Shawn Biddle for the inspiration :)
+" Thanks to Mario Longobardi for forking all his dotfiles for me
 "
 
 "Load custom settings from separate files

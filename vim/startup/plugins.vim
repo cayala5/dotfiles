@@ -125,6 +125,8 @@ Plugin 'majutsushi/tagbar'
 " Tmux movement mappings
 Plugin 'christoomey/vim-tmux-navigator'
 
+Plugin 'https://bbgithub.dev.bloomberg.com/bhipple/bde_plugins'  " Tools for formatting code according to BDE Standards
+
 " Linux-Only plug-ins
 if g:platform == "Linux"
     " Autocompletion and semantic completion
@@ -185,3 +187,4 @@ endif
 " :PluginClean(!)      - confirm (or auto-approve) removal of unused plugins
 "
 " see :h vundle for more details or wiki for FAQ
+source ~/.vim/bundle/bde_plugins/bde_format.vim
