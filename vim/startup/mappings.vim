@@ -76,3 +76,6 @@ imap <C-T> <C-o>:pyf /bb/bigstorq4/scrpbuild/devtools/bin/clang-format.py<CR>
 
 " Visual block paste (see https://danielmiessler.com/study/vim/)
 vnoremap . :norm.<CR>
+
+" Bael log category at the start of function
+map <F6> <ESC>[[oBAEL_LOG_SET_CATEGORY(LOG_CATEGORY);<ESC><C-o>

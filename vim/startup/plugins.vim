@@ -45,7 +45,7 @@ Plugin 'phleet/vim-arcanist'
 
 " Doxygen comments
 Plugin 'DoxygenToolkit.vim'
-let g:DoxygenToolkit_authorName="Mario Longobardi <mlongob@gmail.com>"
+let g:DoxygenToolkit_authorName="Christian Ayala <cayala5@live.com>"
 
 " Clang format for C/C++/ObjC
 "Plugin 'kana/vim-operator-user'
