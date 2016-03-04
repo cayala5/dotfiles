@@ -52,6 +52,7 @@
 	la = "!git config -l | grep alias | cut -c 7-"
 	exec = ! "exec"
 	st = status -sb
+        stt = "!git st ; git grep CHRISTIAN"
 	br = branch -vv
 	bra = branch -vv --all
 	bed = branch --edit-description

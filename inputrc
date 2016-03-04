@@ -1,6 +1,10 @@
 # Use Vi, not Emacs, style editing
 set editing-mode vi
 
+# Keep a line from not wrapping to the next line
+set editing-mode vi
+
+# Partial command history search
 "\e[A": history-search-backward
 "\e[B": history-search-forward
 "\C-l":'clear\n'

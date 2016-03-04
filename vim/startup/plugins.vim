@@ -100,16 +100,6 @@ Plugin 'flazz/vim-colorschemes'
 " Makes GVim colorscheme available in the terminal
 "Plugin 'godlygeek/csapprox'
 
-" Syntax checking
-Plugin 'scrooloose/syntastic'
-
-if g:platform != "AIX"
-    let g:syntastic_error_symbol = '✗✗'
-    let g:syntastic_style_error_symbol = '✠✠'
-    let g:syntastic_warning_symbol = '∆∆'
-    let g:syntastic_style_warning_symbol = '≈≈'
-endif
-
 " ListToggle for display of quickfix/location list
 Plugin 'Valloric/ListToggle'
 
@@ -130,12 +120,12 @@ Plugin 'https://bbgithub.dev.bloomberg.com/bhipple/bde_plugins'  " Tools for for
 " Linux-Only plug-ins
 if g:platform == "Linux"
     " Autocompletion and semantic completion
-    Plugin 'Valloric/YouCompleteMe'
+     "Plugin 'Valloric/YouCompleteMe'
     "let g:ycm_server_log_level = 'debug'
-    let g:ycm_confirm_extra_conf = 0
-    let g:ycm_autoclose_preview_window_after_insertion = 1
-    let g:ycm_always_populate_location_list = 1
-    let g:ycm_global_ycm_extra_conf = '~/.ycm_default_conf.py'
+"     let g:ycm_confirm_extra_conf = 0
+"     let g:ycm_autoclose_preview_window_after_insertion = 1
+"     let g:ycm_always_populate_location_list = 1
+"     let g:ycm_global_ycm_extra_conf = '~/.ycm_default_conf.py'
 
     " Show Location list output in airline
     Plugin 'asenac/vim-airline-loclist'
@@ -164,6 +154,17 @@ endif
 "Plugin 'xolox/vim-session'
 "Plugin 'junegunn/vim-easy-align'
 "Plugin 'rhysd/clever-f.vim'
+
+" Syntax checking
+"Plugin 'scrooloose/syntastic'
+
+"if g:platform != "AIX"
+    "let g:syntastic_error_symbol = '✗✗'
+    "let g:syntastic_style_error_symbol = '✠✠'
+    "let g:syntastic_warning_symbol = '∆∆'
+    "let g:syntastic_style_warning_symbol = '≈≈'
+"endif
+
 
 call vundle#end()
 filetype plugin indent on
