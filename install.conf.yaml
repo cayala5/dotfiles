@@ -6,3 +6,10 @@
     ~/.vim: vim
     ~/.vimrc: vimrc
     ~/.tmux.conf: tmux.conf
+
+- shell:
+    - [git submodule update --init --remote, Updating submodules]
+    - command: vim +PluginInstall +qall
+      stdin: true
+      stdout: true
+      stderr: true
