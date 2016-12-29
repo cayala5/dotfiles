@@ -9,7 +9,6 @@ fi
 source "${HOME}/.dotfiles/zgen/zgen.zsh"
 
 # automatically reset zgen on modifications
-# TODO: Make this work
 ZGEN_RESET_ON_CHANGE=(${HOME}/.zshrc)
 
 # specify zgen plugins here
@@ -21,7 +20,12 @@ if ! zgen saved; then
 
     # oh-my-zsh plugins
     zgen oh-my-zsh plugins/colored-man-pages
+    zgen oh-my-zsh plugins/command-not-found
+    zgen oh-my-zsh plugins/history-substring-search
     #zgen oh-my-zsh plugins/git  # a bunch of git aliases
+
+    # other plugins
+    zgen load zsh-users/zsh-syntax-highlighting
 
     # tell zgen you're done
     zgen save
